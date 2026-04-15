@@ -122,12 +122,61 @@ footer {
     color: #FFFFFF;
 }
 
+.news {
+    border: 2px solid #D4AF37;
+    margin-bottom: 1em;
+    padding: 1em;
+    background-color: #FFF8F5;
+}
+
+.date {
+    font-size: 80%;
+    color: #7A1E3A;
+}
+
+/* DROPDOWN MENU */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #C76C8C;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content li {
+    border-bottom: 1px solid #7A1E3A;
+}
+
+.dropdown-content a {
+    padding: 0.5em;
+    display: block;
+    color: #FFFFFF;
+}
+
+.dropdown-content a:hover {
+    background-color: #D4AF37;
+    color: #000;
+}
+
+/* SHOW DROPDOWN ON HOVER */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
 /* TABLET */
 @media (min-width: 600px) {
 
     nav ul {
         display: flex;
         justify-content: space-around;
+    }
+
+    nav li {
+        position: relative;
     }
 
     main {
